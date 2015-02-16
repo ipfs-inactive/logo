@@ -75,3 +75,10 @@ click to toggle background color
 ![](ipfs-logo-1024-black.png)
 ![](ipfs-logo-1024-white.png)
 ![](ipfs-logo-1024-ice.png)
+
+## tessellated
+
+![](ipfs-logo-128-black-tessellated.png)
+![](ipfs-logo-128-white-tessellated.png)
+![](ipfs-logo-128-ice-tessellated.png)
+

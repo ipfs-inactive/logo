@@ -6,7 +6,11 @@ index.html: index.md
 	marked <$< >$@
 
 publish: index.html
-	@export hash=$(shell ipfs add -r -q . | tail -n1); \
+	mv .git /tmp/publishing
+	@export hash=`ipfs add -r -q . | tail -n1`; \
 		echo $$hash >published-version; \
 		echo $(local)$$hash; \
 		echo $(gway)$$hash; \
+	@mv /tmp/publishing .git
+
+# we really need an ignore flag in ipfs add...
