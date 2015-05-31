@@ -1,0 +1,20 @@
+{
+  "name": "ipfs-logo",
+  "version": "0.1.1",
+  "description": "IPFS logo in different formats",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipfs/logo"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ipfs"
+  ],
+  "author": "Juan Benet <juan@benet.ai> (http://juan.benet.ai/)",
+  "license": "CC-BY-SA",
+  "bugs": {
+    "url": "https://github.com/ipfs/logo/issues"
+  },
+  "homepage": "https://github.com/ipfs/logo"
+}
