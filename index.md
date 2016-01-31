@@ -2,16 +2,22 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+joined {
+	white-space: nowrap;
+}
 </style>
 
 <script>
 document.onreadystatechange = function () {
-  var color = 'white'
+  // Solorized backround colors
+  var palette = ['white', 'black', '#002B36', '#FDF6E3']
+  var color = palette[0]
   var body = document.getElementsByTagName('body')[0]
+  body.style.backgroundColor = color
   body.onclick= function(){
-    color = (color == 'white') ? 'black' : 'white';
-    body.style.backgroundColor = color;
-  };
+    color = palette[(palette.indexOf(color) + 1) % palette.length] || 'white'
+    body.style.backgroundColor = color
+  }
 }
 </script>
 
@@ -21,6 +27,25 @@ document.onreadystatechange = function () {
 click to toggle background color
 
 ## cube + text
+
+### vector
+![](ipfs-logo-vector-ice-text.svg)
+<joined>
+![](ipfs-logo-vector-black.svg)
+![](ipfs-text-black.svg)
+</joined>
+<joined>
+![](ipfs-logo-vector-white.svg)
+![](ipfs-text-white.svg)
+</joined>
+<joined>
+![](ipfs-logo-vector-ice.svg)
+![](ipfs-text-black.svg)
+</joined>
+<joined>
+![](ipfs-logo-vector-ice.svg)
+![](ipfs-text-white.svg)
+</joined>
 
 ### 128
 
@@ -51,6 +76,13 @@ click to toggle background color
 ![](ipfs-logo-text-1024-ice-white.png)
 
 ## cube only
+
+### vector
+
+![](ipfs-logo-vector-black.svg)
+![](ipfs-logo-vector-white.svg)
+![](ipfs-logo-vector-ice.svg)
+![](ipfs-logo-vector-white-outline.svg)
 
 ### 128
 
