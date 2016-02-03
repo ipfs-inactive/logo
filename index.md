@@ -32,19 +32,19 @@ click to toggle background color
 ![](vector/ipfs-logo-vector-ice-text.svg)
 <joined>
 ![](vector/ipfs-logo-vector-black.svg)
-![](vector/ipfs-text-black.svg)
+![](vector/ipfs-text-vector-black.svg)
 </joined>
 <joined>
 ![](vector/ipfs-logo-vector-white.svg)
-![](vector/ipfs-text-white.svg)
+![](vector/ipfs-text-vector-white.svg)
 </joined>
 <joined>
 ![](vector/ipfs-logo-vector-ice.svg)
-![](vector/ipfs-text-black.svg)
+![](vector/ipfs-text-vector-black.svg)
 </joined>
 <joined>
 ![](vector/ipfs-logo-vector-ice.svg)
-![](vector/ipfs-text-white.svg)
+![](vector/ipfs-text-vector-white.svg)
 </joined>
 
 ### 128
