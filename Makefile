@@ -2,6 +2,8 @@
 local="http://localhost:8080/ipfs/"
 gway="http://gateway.ipfs.io/ipfs/"
 
+.PHONY: publish clean
+
 index.html: index.md
 	marked <$< >$@
 
@@ -11,4 +13,5 @@ publish: index.html
 		echo $(local)$$hash; \
 		echo $(gway)$$hash;
 
-.PHONY: publish
+clean:
+	@rm raster-generated/*
