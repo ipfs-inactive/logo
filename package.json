@@ -1,13 +1,17 @@
 {
   "name": "ipfs-logo",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "IPFS logo in different formats",
   "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/ipfs/logo"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bluebird": "^3.2.1",
+    "glob": "^6.0.4",
+    "svg2png": "^3.0.0"
+  },
   "keywords": [
     "ipfs"
   ],

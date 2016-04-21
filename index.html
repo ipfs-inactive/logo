@@ -2,16 +2,22 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+joined {
+    white-space: nowrap;
+}
 </style>
 
 <script>
 document.onreadystatechange = function () {
-  var color = 'white'
+  // Solorized backround colors
+  var palette = ['white', 'black', '#002B36', '#FDF6E3']
+  var color = palette[0]
   var body = document.getElementsByTagName('body')[0]
+  body.style.backgroundColor = color
   body.onclick= function(){
-    color = (color == 'white') ? 'black' : 'white';
-    body.style.backgroundColor = color;
-  };
+    color = palette[(palette.indexOf(color) + 1) % palette.length] || 'white'
+    body.style.backgroundColor = color
+  }
 }
 </script>
 
@@ -19,45 +25,69 @@ document.onreadystatechange = function () {
 <h1 id="ipfs-logo">IPFS Logo</h1>
 <p>click to toggle background color</p>
 <h2 id="cube-text">cube + text</h2>
+<h3 id="vector">vector</h3>
+<p><img src="vector/ipfs-logo-vector-ice-text.svg" alt=""></p>
+<joined>
+<img src="vector/ipfs-logo-vector-black.svg" alt="">
+<img src="vector/ipfs-text-vector-black.svg" alt="">
+</joined>
+<joined>
+<img src="vector/ipfs-logo-vector-white.svg" alt="">
+<img src="vector/ipfs-text-vector-white.svg" alt="">
+</joined>
+<joined>
+<img src="vector/ipfs-logo-vector-ice.svg" alt="">
+<img src="vector/ipfs-text-vector-black.svg" alt="">
+</joined>
+<joined>
+<img src="vector/ipfs-logo-vector-ice.svg" alt="">
+<img src="vector/ipfs-text-vector-white.svg" alt="">
+</joined>
+
 <h3 id="128">128</h3>
-<p><img src="ipfs-logo-text-128-black.png" alt="">
-<img src="ipfs-logo-text-128-white.png" alt="">
-<img src="ipfs-logo-text-128-ice.png" alt="">
-<img src="ipfs-logo-text-128-ice-white.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-text-128-black.png" alt="">
+<img src="raster-generated/ipfs-logo-text-128-white.png" alt="">
+<img src="raster-generated/ipfs-logo-text-128-ice.png" alt="">
+<img src="raster-generated/ipfs-logo-text-128-ice-white.png" alt=""></p>
 <h3 id="256">256</h3>
-<p><img src="ipfs-logo-text-256-black.png" alt="">
-<img src="ipfs-logo-text-256-white.png" alt="">
-<img src="ipfs-logo-text-256-ice.png" alt="">
-<img src="ipfs-logo-text-256-ice-white.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-text-256-black.png" alt="">
+<img src="raster-generated/ipfs-logo-text-256-white.png" alt="">
+<img src="raster-generated/ipfs-logo-text-256-ice.png" alt="">
+<img src="raster-generated/ipfs-logo-text-256-ice-white.png" alt=""></p>
 <h3 id="512">512</h3>
-<p><img src="ipfs-logo-text-512-black.png" alt="">
-<img src="ipfs-logo-text-512-white.png" alt="">
-<img src="ipfs-logo-text-512-ice.png" alt="">
-<img src="ipfs-logo-text-512-ice-white.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-text-512-black.png" alt="">
+<img src="raster-generated/ipfs-logo-text-512-white.png" alt="">
+<img src="raster-generated/ipfs-logo-text-512-ice.png" alt="">
+<img src="raster-generated/ipfs-logo-text-512-ice-white.png" alt=""></p>
 <h3 id="1024">1024</h3>
-<p><img src="ipfs-logo-text-1024-black.png" alt="">
-<img src="ipfs-logo-text-1024-white.png" alt="">
-<img src="ipfs-logo-text-1024-ice.png" alt="">
-<img src="ipfs-logo-text-1024-ice-white.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-text-1024-black.png" alt="">
+<img src="raster-generated/ipfs-logo-text-1024-white.png" alt="">
+<img src="raster-generated/ipfs-logo-text-1024-ice.png" alt="">
+<img src="raster-generated/ipfs-logo-text-1024-ice-white.png" alt=""></p>
 <h2 id="cube-only">cube only</h2>
+<h3 id="vector">vector</h3>
+<p><img src="vector/ipfs-logo-vector-black.svg" alt="">
+<img src="vector/ipfs-logo-vector-white.svg" alt="">
+<img src="vector/ipfs-logo-vector-ice.svg" alt="">
+<img src="vector/ipfs-logo-vector-white-outline.svg" alt=""></p>
 <h3 id="128">128</h3>
-<p><img src="ipfs-logo-128-black.png" alt="">
-<img src="ipfs-logo-128-white.png" alt="">
-<img src="ipfs-logo-128-ice.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-128-black.png" alt="">
+<img src="raster-generated/ipfs-logo-128-white.png" alt="">
+<img src="raster-generated/ipfs-logo-128-ice.png" alt=""></p>
 <h3 id="256">256</h3>
-<p><img src="ipfs-logo-256-black.png" alt="">
-<img src="ipfs-logo-256-white.png" alt="">
-<img src="ipfs-logo-256-ice.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-256-black.png" alt="">
+<img src="raster-generated/ipfs-logo-256-white.png" alt="">
+<img src="raster-generated/ipfs-logo-256-ice.png" alt=""></p>
 <h3 id="512">512</h3>
-<p><img src="ipfs-logo-512-black.png" alt="">
-<img src="ipfs-logo-512-white.png" alt="">
-<img src="ipfs-logo-512-ice.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-512-black.png" alt="">
+<img src="raster-generated/ipfs-logo-512-white.png" alt="">
+<img src="raster-generated/ipfs-logo-512-ice.png" alt=""></p>
 <h3 id="1024">1024</h3>
-<p><img src="ipfs-logo-1024-black.png" alt="">
-<img src="ipfs-logo-1024-white.png" alt="">
-<img src="ipfs-logo-1024-ice.png" alt=""></p>
+<p><img src="raster-generated/ipfs-logo-1024-black.png" alt="">
+<img src="raster-generated/ipfs-logo-1024-white.png" alt="">
+<img src="raster-generated/ipfs-logo-1024-ice.png" alt=""></p>
 <h2 id="tessellated">tessellated</h2>
-<p><img src="ipfs-logo-128-black-tessellated.png" alt="">
-<img src="ipfs-logo-128-white-tessellated.png" alt="">
-<img src="ipfs-logo-128-ice-tessellated.png" alt=""></p>
+<p><img src="raster/ipfs-logo-128-black-tessellated.png" alt="">
+<img src="raster/ipfs-logo-128-white-tessellated.png" alt="">
+<img src="raster/ipfs-logo-128-ice-tessellated.png" alt=""></p>
 
